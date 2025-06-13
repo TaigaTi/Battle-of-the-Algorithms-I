@@ -1,23 +1,23 @@
 # Introduction
 
-The **Battle of the Algorithms** is an exhilarating week-long coding tournament that tests and celebrates developers' skills. Eight talented participants will compete head-to-head, striving to craft the most efficient and effective algorithms. Each developer will receive a standardized User Interface (UI) and Application Programming Interface (API) to integrate their solutions. The competition follows an elimination-style format, with contestants facing off in pairs until one emerges as the ultimate champion!
+The **Battle of the Algorithms** is an exhilarating two week-long coding tournament that tests and celebrates developers' skills. Eight talented participants will compete head-to-head, striving to craft the most efficient and effective algorithms. Each developer will receive a standardized User Interface (UI) and Application Programming Interface (API) to integrate their solutions.
 
 ## Rules
 
 ### Elimination Style Tournament
-- Two developers will compete head-to-head in each match. The winner advances, and the loser is eliminated.
-- Matches will continue until the final showdown between the last two developers.
+- Two developers will compete head-to-head in each bracket. The winner advances, and the loser is eliminated.
+- Brackets will continue until the final showdown between the last two developers.
+- Each bracket will have 3 rounds - best of 3 wins.
 
 ### Duration
-- The competition spans a week, ensuring ample time for participants to develop and refine their algorithms.
+- The competition spans two weeks, ensuring ample time for participants to develop and refine their algorithms.
 
 ### Final Competition
-- At the end of the week, all algorithms will face off in a tournament mode to determine the ultimate champion.
-- Each algorithm must operate autonomously during matches.
+- At the end of the coding period, all algorithms will face off in a live tournament to determine the ultimate champion.
 
 ## Game Design
 
-Participants will program an AI version of the classic **Snake game**, where the snake navigates a grid to survive and gather food while avoiding obstacles and rival snakes. Developers must focus on strategic decision-making, efficient pathfinding, and adaptability to succeed.
+Participants will program an AI controller for the classic **Snake game**, where each snake navigates a grid to survive and gather food while avoiding obstacles and rival snakes. Developers must focus on strategic decision-making, efficient pathfinding, and adaptability to succeed.
 
 ### Gameplay Mechanics
 
@@ -31,8 +31,9 @@ Participants will program an AI version of the classic **Snake game**, where the
 #### Food Placement
 - Food ("apples") will spawn in varying quantities and locations on the grid.
 - Multiple apples can spawn at a time.
-- There will always be a minimum 3 apples on the grid.
 - When an apple is collected, a new one will spawn in a random location.
+- There will always be exactly 3 apples on the grid, unless Sudden Death is activated.
+- During Sudden Death there will only be 1 apple on the board.
 
 #### Snake Collisions
 - Developers must implement collision avoidance strategies to prevent the snake from hitting walls, obstacles, or rival snakes, while prioritizing food collection.
@@ -55,7 +56,7 @@ Participants will program an AI version of the classic **Snake game**, where the
     - Both snakes are temporarily paused and a "Sudden Death" message is displayed with a countdown.
     - All regular food is cleared from the grid, and a single special "sudden death apple" is spawned in a random location.
     - When the countdown ends, both snakes resume play.
-    - The first snake to eat the sudden death apple wins the match.
+    - The first snake to eat the sudden death apple wins the round.
 
 ### AI Decision Time Limit
 - Each AI has a **50 milliseconds time limit** to choose a new direction for the snake's movement.
@@ -66,7 +67,7 @@ Participants will program an AI version of the classic **Snake game**, where the
 
 ## Algorithm Submission
 
-To participate in the **Battle of the Algorithms**, each developer will need to submit their AI algorithm as a Python script that can be executed by the backend during match execution. Here are the key steps for submitting and integrating your algorithm into the tournament:
+To participate in the **Battle of the Algorithms**, each developer will need to submit their AI algorithm as a Python script that can be executed during a bracket. Here are the key steps for submitting and integrating your algorithm into the tournament:
 
 ### Submission Deadline
 - All algorithm submissions **must be received by 3:00 PM on June 7th**.
@@ -88,7 +89,7 @@ To participate in the **Battle of the Algorithms**, each developer will need to 
 
 ### Testing and Debugging
 - Before the tournament, it’s recommended to **test your algorithm** using the game setup provided.
-- If there are errors in the final submission, the player will be notified, and a chance to **fix the issue** may be provided before the match begins - up to one day after the deadline.
+- If there are errors in the final submission, the player will be notified, and each player will have a chance to **fix technical issues** after the first and only round of testing on the tournament host machine.
 
 ## Use of AI-Assisted Coding Tools
 You are welcome to use AI-based tools (such as GitHub Copilot, ChatGPT, or similar assistants) to help write or optimize your algorithm. 
